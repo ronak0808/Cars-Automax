@@ -36,6 +36,8 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "web-production-1991.up.railway.app"]
 CSRF_TRUTED_ORIGIN=['https://web-production-1991.up.railway.app']
+CSRF_ALLOWED_ORIGINS = ["https://web-production-1991.up.railway.app"]
+CORS_ORIGINS_WHITELIST = ["https://web-production-1991.up.railway.app"]
 
 
 # Application definition
